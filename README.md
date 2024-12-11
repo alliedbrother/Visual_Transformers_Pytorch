@@ -2,6 +2,8 @@
 
 This repository implements a vision model from scratch using PyTorch. The model leverages transformers to perform image processing and inference tasks. Below, you will find instructions on how to run the model, descriptions of the files in this repository, and details about sample inputs and outputs.
 
+![Output Bottle](pali_gemma_architecture.png)
+
 ---
 
 ## Table of Contents
