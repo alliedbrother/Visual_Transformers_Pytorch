@@ -59,7 +59,6 @@ class SiglipVisionEmbeddings(nn.Module):
 
     def forward(self, pixel_values: torch.FloatTensor) -> torch.Tensor:
         _, _, height, width = pixel_values.shape # [Batch_Size, Channels, Height, Width]
-        # Convolve the `patch_size` kernel over the image, with no overlapping patches since the stride is equal to the kernel size
         # The output of the convolution will have shape [Batch_Size, Embed_Dim, Num_Patches_H, Num_Patches_W]
         # where Num_Patches_H = height // patch_size and Num_Patches_W = width // patch_size
         patch_embeds = self.patch_embedding(pixel_values)  
@@ -75,7 +74,6 @@ class SiglipVisionEmbeddings(nn.Module):
 
 
 class SiglipAttention(nn.Module):
-    """Multi-headed attention from 'Attention Is All You Need' paper"""
 
     def __init__(self, config):
         super().__init__()

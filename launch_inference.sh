@@ -1,8 +1,8 @@
 #!/bin/bash
 
 MODEL_PATH="/home/luk_lab/Desktop/Luk Lab - AI/projects/thesis/Visual_Transformers/paligemma-3b-pt-224"
-PROMPT="what is present in the image ? "
-IMAGE_FILE_PATH="/home/luk_lab/Desktop/Luk Lab - AI/projects/thesis/Visual_Transformers/bottle.png"
+PROMPT="Describe the image "
+IMAGE_FILE_PATH="/home/luk_lab/Desktop/Luk Lab - AI/projects/thesis/Visual_Transformers/monkey.png"
 MAX_TOKENS_TO_GENERATE=250
 TEMPERATURE=0.8
 TOP_P=0.9
