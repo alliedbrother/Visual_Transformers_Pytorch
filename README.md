@@ -23,7 +23,7 @@ This project demonstrates the use of vision transformers (ViT) for processing im
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd Visual_Transformers
+   cd Visual_Transformers_Pytorch
    ```
 2. Install the required Python dependencies:
    ```bash
